@@ -1,0 +1,76 @@
+
+.connect4-grid {
+  display: grid;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 1rem;
+  background-color: blue;
+  grid-template-columns: repeat(7, 13%);
+}
+
+.ChoosingGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 13%);  
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.cell {
+  border-radius: 50%;
+  border-color: blue;
+}
+
+.ChoosingButtons {
+  border-radius: 50%;
+  background-color:rgba(179, 47, 47, 0.1);
+}
+
+@media screen and (min-width: 1000px) {
+  .connect4-grid {
+    grid-gap: .45rem;
+    width: 600px;
+  }
+  .ChoosingGrid {
+    grid-gap: .45rem;
+    width: 600px;
+  }
+  .cell {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  .ChoosingButtons {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+ }
+
+@media screen and (max-width: 1000px) {
+  .connect4-grid {
+    grid-gap: .3rem;
+    width: 400px;
+  }
+  .ChoosingGrid {
+    grid-gap: .3rem;
+    width: 400px;
+  }
+  .cell {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .ChoosingButtons {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+ }
+
+.empty {
+  background-color: white;
+}
+.player1 {
+  background-color: red;
+}
+.player2 {
+  background-color: yellow;
+}
+
